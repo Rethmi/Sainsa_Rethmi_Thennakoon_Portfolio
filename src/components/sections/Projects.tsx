@@ -46,7 +46,7 @@ const Projects = () => {
             tech: ["Spring Boot", "MySQL", "JavaScript", "JWT"],
             category: "Web",
             githubUrl: "https://github.com/Rethmi/SmartStay_hotel_booking.git",
-            image: "/src/assets/hotel_booking.png"
+            image: "/assets/hotel_booking.png"
         },
         {
             title: "Art & Craft Gallery",
@@ -54,7 +54,7 @@ const Projects = () => {
             tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
             category: "Web",
             githubUrl: "https://github.com/Rethmi/HandSpireCollective_Frontend.git",
-            image: "/src/assets/craft.png"
+            image: "/assets/craft.png"
         },
         {
             title: "Streakify Mobile App",
@@ -62,7 +62,7 @@ const Projects = () => {
             tech: ["React Native", "JavaScript", "Firebase"],
             category: "Mobile",
             githubUrl: "https://github.com/Rethmi/Streakify-MobileApp-AMD_Final_Project-.git",
-            image: "/src/assets/habit.png"
+            image: "/assets/habit.png"
         },
         {
             title: "Complaint Management System",
@@ -70,7 +70,7 @@ const Projects = () => {
             tech: ["JavaFX", "MySQL", "Hibernate"],
             category: "Desktop",
             githubUrl: "https://github.com/Rethmi/Complaint-Management-System.git",
-            image: "/src/assets/hotel_booking.png"
+            image: "/assets/hotel_booking.png"
         },
         {
             title: "BookShop Management System",
@@ -78,7 +78,7 @@ const Projects = () => {
             tech: ["Java", "MySQL"],
             category: "Desktop",
             githubUrl: "https://github.com/Rethmi/BookShop-Management-System-First-semester-final-project-.git",
-            image: "/src/assets/book.png"
+            image: "/assets/book.png"
         },
         {
             title: "Strategic Patient Risk Stratification",
@@ -86,7 +86,7 @@ const Projects = () => {
             tech: ["Python", "Data Science"],
             category: "Data Science",
             githubUrl: "https://github.com/Rethmi/Vitality-Health-Network-V.H.N-Data-Science",
-            image: "/src/assets/python.png"
+            image: "/assets/python.png"
         }
     ];
 

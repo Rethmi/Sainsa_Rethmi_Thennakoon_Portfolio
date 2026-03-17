@@ -18,8 +18,7 @@ function App() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     
-    // කලින් සේව් කරපු theme එක ගන්නවා, නැත්නම් dark mode එක default ගන්නවා
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
     useEffect(() => {
         if (theme === 'dark') {

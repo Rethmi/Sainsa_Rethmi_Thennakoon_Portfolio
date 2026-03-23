@@ -115,7 +115,7 @@
 
 // export default About;
 import React from 'react';
-import { MapPin, Phone, Download, GraduationCap, Code2, Sparkles } from 'lucide-react';
+import { MapPin, Phone, Download, GraduationCap, Code2, Sparkles, Bug } from 'lucide-react';
 
 const About = () => {
     const handleDownloadCV = () => {
@@ -200,9 +200,14 @@ const About = () => {
                             title="UI/UX Design"
                             desc="Creating intuitive, modern interfaces that provide seamless user journeys."
                         />
+                        <FocusCard 
+    icon={<Bug className="w-8 h-8 text-green-600 dark:text-green-400" />}
+    title="QA Engineering"
+    desc="Ensuring software quality through manual and automated testing using tools like Selenium, focusing on bug detection and performance."
+/>
                         
                         {/* Current Focus Card */}
-                        <div className="md:col-span-2 p-8 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[2rem] relative overflow-hidden group shadow-md dark:shadow-none">
+                        {/* <div className="md:col-span-2 p-8 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[2rem] relative overflow-hidden group shadow-md dark:shadow-none">
                             <div className="relative z-10 flex flex-col items-center text-center space-y-4">
                                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Current Focus</h3>
                                 <p className="text-slate-600 dark:text-gray-400 max-w-sm">
@@ -212,7 +217,7 @@ const About = () => {
                             <div className="absolute top-0 right-0 p-4 opacity-5 dark:opacity-10 group-hover:opacity-10 dark:group-hover:opacity-20 transition-opacity">
                                 <Code2 className="w-24 h-24 text-slate-900 dark:text-white" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

@@ -188,7 +188,9 @@ import {
     Code2, Braces, Terminal, Cpu, 
     Globe, Layout, Smartphone, Palette, 
     Database, HardDrive, Github,
-    Server, Coffee, Zap, Binary, Layers, Sparkles
+    Server, Coffee, Zap, Binary, Layers, Sparkles,
+    Bot,
+    Figma
 } from "lucide-react";
 
 const containerVariants: Variants = {
@@ -260,6 +262,10 @@ const Skills: React.FC = () => {
                 { name: "MySQL", icon: <Database className="w-4 h-4 text-blue-600 dark:text-blue-500" /> },
                 { name: "MongoDB", icon: <HardDrive className="w-4 h-4 text-green-700 dark:text-green-600" /> },
                 { name: "Git & GitHub", icon: <Github className="w-4 h-4 text-slate-800 dark:text-white" /> },
+
+                 // 🔥 New Added
+        { name: "Selenium", icon: <Bot className="w-4 h-4 text-green-500" /> },
+        { name: "Figma", icon: <Figma className="w-4 h-4 text-pink-500" /> },
             ]
         }
     ];

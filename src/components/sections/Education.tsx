@@ -7,7 +7,7 @@ const Education = () => {
             institution: "Institute of Software Engineering (IJSE)",
             period: "2024 - 2026",
             status: "Current",
-            description: "Focusing on Full-stack development, Architecture, and Enterprise solutions."
+            description: "Focusing on Full-stack development, UI,UX Designing, and Enterprise solutions."
         },
         {
             degree: "Diploma in Information & Communication Technology",

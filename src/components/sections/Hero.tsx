@@ -255,7 +255,7 @@ const Hero = () => {
                         </h1>
                         <h2 className="text-2xl md:text-4xl font-semibold text-slate-700 dark:text-gray-300">
                             <TypingAnimation 
-                                texts={["Full-Stack Developer", "UI/UX Designer", "Web Developer", "Problem Solver"]} 
+                                texts={["Full-Stack Developer", "UI/UX Designer", "QA Engineer", "Web Developer", "Problem Solver"]} 
                                 speed={80} 
                             />
                         </h2>

@@ -70,7 +70,7 @@ const Projects = () => {
             tech: ["JavaFX", "MySQL", "Hibernate"],
             category: "Desktop",
             githubUrl: "https://github.com/Rethmi/Complaint-Management-System.git",
-            image: "/assets/hotel_booking.png"
+            image: "/assets/Complaint.png"
         },
         {
             title: "BookShop Management System",

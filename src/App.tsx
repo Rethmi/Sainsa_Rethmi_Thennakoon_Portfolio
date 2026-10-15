@@ -5,7 +5,9 @@ import {
     Hero,
     About,
     Skills,
+    Experience,
     Projects,
+    UIUXDesigns,
     Education,
     Awards,
     Contact,
@@ -18,7 +20,7 @@ function App() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     
-     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
     useEffect(() => {
         if (theme === 'dark') {
@@ -39,7 +41,17 @@ function App() {
         };
 
         const handleScroll = () => {
-            const sections = ['home', 'about', 'skills', 'projects', 'education','awards', 'contact'];
+            const sections = [
+                'home', 
+                'about', 
+                'skills', 
+                'experience', 
+                'projects', 
+                'designs', 
+                'education', 
+                'awards', 
+                'contact'
+            ];
             const scrollPosition = window.scrollY + 100;
             sections.forEach(sectionId => {
                 const element = document.getElementById(sectionId);
@@ -68,7 +80,6 @@ function App() {
     };
 
     return (
-        /* මුළු Portfolio එකේම Background එක මෙතනින් පාලනය වෙනවා */
         <div className="min-h-screen bg-slate-50 dark:bg-black text-slate-900 dark:text-white transition-colors duration-500 overflow-x-hidden">
             <CustomCursor mousePosition={mousePosition} />
             
@@ -81,12 +92,13 @@ function App() {
                 toggleTheme={toggleTheme}
             />
 
-            {/* සියලුම Section වලට පහත ආකාරයට Styles දාන්න */}
             <main>
                 <Hero />
                 <About />
                 <Skills />
+                <Experience />
                 <Projects />
+                <UIUXDesigns />
                 <Education />
                 <Awards />
                 <Contact />

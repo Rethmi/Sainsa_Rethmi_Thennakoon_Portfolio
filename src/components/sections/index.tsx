@@ -1,13 +1,15 @@
- 
 export { default as Hero } from './Hero';
 export { default as About } from './About';
 export { default as Skills } from './Skills';
+export { default as Experience } from './Experience';
 export { default as Projects } from './Projects';
+export { default as UIUXDesigns } from './UIUXDesigns';
 export { default as Education } from './Education';
 export { default as Awards } from './awards';
 export { default as Contact } from './Contact';
 export { default as Footer } from './../Footer';
 export { default as Navigation } from './../Navigation';
+
 export const CustomCursor = ({ mousePosition }: { mousePosition: { x: number; y: number } }) => {
     return (
         <div
@@ -20,4 +22,3 @@ export const CustomCursor = ({ mousePosition }: { mousePosition: { x: number; y:
         />
     );
 };
-

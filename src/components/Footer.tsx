@@ -1,239 +1,221 @@
-// import React from 'react';
+'use client';
 
-// const Footer = () => {
-//     return (
-//         <footer className="bg-gray-900 text-white py-12 px-6 border-t border-gray-800">
-//             <div className="max-w-7xl mx-auto">
-//                 {/* Main Footer Content */}
-//                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-//                     {/* About Section */}
-//                     <div className="col-span-1 md:col-span-2">
-//                         <h3 className="text-xl font-bold mb-4 text-white">Sainsa Rethmi Thennakoon</h3>
-//                         <p className="text-gray-400 mb-4 leading-relaxed">
-//                             Passionate full-stack developer crafting modern web experiences with
-//                             cutting-edge technologies. Always eager to take on new challenges and
-//                             create innovative solutions.
-//                         </p>
-//                         <div className="flex space-x-4">
-//                             {/* Social Media Links */}
-//                             <a
-//                                 href="https://github.com/Rethmi"
-//                                 target="_blank"
-//                                 rel="noopener noreferrer"
-//                                 className="text-gray-400 hover:text-white transition-colors duration-300"
-//                                 aria-label="GitHub"
-//                             >
-//                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-//                                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-//                                 </svg>
-//                             </a>
-//                             <a
-//                                 href="https://www.linkedin.com/in/sainsa-rethmi-thennakoon-238a54291/"
-//                                 target="_blank"
-//                                 rel="noopener noreferrer"
-//                                 className="text-gray-400 hover:text-white transition-colors duration-300"
-//                                 aria-label="LinkedIn"
-//                             >
-//                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-//                                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-//                                 </svg>
-//                             </a>
-//                             <a
-//                                 href="mailto:reththennakoon.edu@gmail.com"
-//                                 className="text-gray-400 hover:text-white transition-colors duration-300"
-//                                 aria-label="Email"
-//                             >
-//                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-//                                 </svg>
-//                             </a>
-//                         </div>
-//                     </div>
-
-//                     {/* Quick Links */}
-//                     <div>
-//                         <h4 className="text-lg font-semibold mb-4 text-white">Quick Links</h4>
-//                         <ul className="space-y-2">
-//                             <li>
-//                                 <a href="#about" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     About Me
-//                                 </a>
-//                             </li>
-//                             <li>
-//                                 <a href="#projects" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     Projects
-//                                 </a>
-//                             </li>
-//                             <li>
-//                                 <a href="#skills" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     Skills
-//                                 </a>
-//                             </li>
-//                             <li>
-//                                 <a href="#experience" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     Education
-//                                 </a>
-//                             </li>
-
-//                              <li>
-//                                 <a href="#experience" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     Experience
-//                                 </a>
-//                             </li>
-//                              <li>
-//                                 <a href="#experience" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     Awards
-//                                 </a>
-//                             </li>
-//                         </ul>
-//                     </div>
-
-//                     {/* Contact Info */}
-//                     <div>
-//                         <h4 className="text-lg font-semibold mb-4 text-white">Get In Touch</h4>
-//                         <ul className="space-y-3">
-//                             <li className="flex items-center space-x-3">
-//                                 <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-//                                 </svg>
-//                                 <a href="mailto:rethmi@example.com" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     reththennakoon.edu@gmail.com 
-//                                 </a>
-//                             </li>
-//                             <li className="flex items-center space-x-3">
-//                                 <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-//                                 </svg>
-//                                 <a href="tel:+94123456789" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                     +94 70 483 9927
-//                                 </a>
-//                             </li>
-//                             <li className="flex items-start space-x-3">
-//                                 <svg className="w-5 h-5 text-gray-400 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-//                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-//                                 </svg>
-//                                 <span className="text-gray-400">
-//                                    Bandarawela, Sri Lanka
-//                                 </span>
-//                             </li>
-//                         </ul>
-//                     </div>
-//                 </div>
-
-//                 {/* Divider */}
-//                 <div className="border-t border-gray-800 pt-8">
-//                     <div className="flex flex-col md:flex-row justify-between items-center">
-//                         <p className="text-gray-400 text-sm mb-4 md:mb-0">
-//                             © 2025 Sainsa Rethmi Thennakoon. Crafted with passion and modern web technologies.
-//                         </p>
-//                         <div className="flex space-x-6 text-sm">
-//                             <a href="#privacy" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                 Privacy Policy
-//                             </a>
-//                             <a href="#terms" className="text-gray-400 hover:text-white transition-colors duration-300">
-//                                 Terms of Service
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </footer>
-//     );
-// };
-
-// export default Footer;
 import React from 'react';
+import { 
+    Mail, 
+    Phone, 
+    MapPin, 
+    ArrowUp, 
+    Download, 
+    Github, 
+    Linkedin, 
+    Sparkles 
+} from 'lucide-react';
 
-const Footer = () => {
+const Footer: React.FC = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = '/cv/Sainsa_Rethmi_Thennakoon_CV.pdf';
+        link.download = 'Sainsa_Rethmi_Thennakoon_CV.pdf';
+        link.click();
+    };
+
+    const quickLinks = [
+        { label: 'Home', href: '#home' },
+        { label: 'About Me', href: '#about' },
+        { label: 'Skills', href: '#skills' },
+        { label: 'Experience', href: '#experience' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'UI/UX Designs', href: '#designs' },
+        { label: 'Education', href: '#education' },
+        { label: 'Awards & Honors', href: '#awards' },
+        { label: 'Contact', href: '#contact' },
+    ];
+
+    const socialLinks = [
+        {
+            name: 'GitHub',
+            href: 'https://github.com/Rethmi',
+            icon: <Github className="w-4 h-4" />,
+            hoverColor: 'hover:text-slate-900 dark:hover:text-white hover:border-slate-400 dark:hover:border-white/40'
+        },
+        {
+            name: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/sainsa-rethmi-thennakoon-238a54291/',
+            icon: <Linkedin className="w-4 h-4" />,
+            hoverColor: 'hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400 dark:hover:border-blue-500/40'
+        },
+        {
+            name: 'Email',
+            href: 'mailto:reththennakoon.edu@gmail.com',
+            icon: <Mail className="w-4 h-4" />,
+            hoverColor: 'hover:text-purple-600 dark:hover:text-purple-400 hover:border-purple-400 dark:hover:border-purple-500/40'
+        },
+        {
+            name: 'WhatsApp',
+            href: 'https://wa.me/94704839927',
+            icon: <Phone className="w-4 h-4" />,
+            hoverColor: 'hover:text-emerald-600 dark:hover:text-emerald-400 hover:border-emerald-400 dark:hover:border-emerald-500/40'
+        }
+    ];
+
     return (
-        <footer className="bg-white dark:bg-[#030712] text-slate-900 dark:text-white py-12 px-6 border-t border-slate-200 dark:border-gray-800 transition-colors duration-500">
-            <div className="max-w-7xl mx-auto">
-                {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                    {/* About Section */}
-                    <div className="col-span-1 md:col-span-2">
-                        <h3 className="text-xl font-bold mb-4 text-slate-900 dark:text-white">Sainsa Rethmi Thennakoon</h3>
-                        <p className="text-slate-600 dark:text-gray-400 mb-4 leading-relaxed max-w-md">
-                            Passionate full-stack developer crafting modern web experiences with
-                            cutting-edge technologies. Always eager to take on new challenges and
-                            create innovative solutions.
+        <footer className="relative bg-slate-100/90 dark:bg-[#02020a] text-slate-900 dark:text-white border-t border-slate-200 dark:border-white/10 transition-colors duration-500 overflow-hidden">
+            {/* Ambient Background Glows */}
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/5 dark:bg-cyan-500/5 rounded-full blur-[140px] pointer-events-none" />
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/5 dark:bg-pink-500/5 rounded-full blur-[140px] pointer-events-none" />
+
+            <div className="max-w-7xl mx-auto px-6 pt-16 pb-12 relative z-10">
+                {/* Main Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-slate-200/80 dark:border-white/10">
+                    
+                    {/* Brand & Bio Column (5 cols) */}
+                    <div className="lg:col-span-5 space-y-5">
+                        <div className="flex items-center gap-3">
+                            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white font-extrabold text-lg shadow-md shadow-indigo-500/25">
+                                SR
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+                                    Sainsa Rethmi Thennakoon
+                                </h3>
+                                <p className="text-xs font-semibold text-indigo-600 dark:text-cyan-400 uppercase tracking-wider">
+                                    Aspiring UI/UX Engineer &amp; Full-Stack Developer
+                                </p>
+                            </div>
+                        </div>
+
+                        <p className="text-sm text-slate-600 dark:text-gray-400 leading-relaxed max-w-md">
+                            Crafting intuitive, human-centered digital interfaces and scalable software solutions. Merging visual aesthetic elegance with technical precision to build delightful web and mobile products.
                         </p>
-                        <div className="flex space-x-4">
-                            {/* Social Media Links - Adaptive colors */}
-                            <SocialLink 
-                                href="https://github.com/Rethmi" 
-                                icon={<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>} 
-                            />
-                            <SocialLink 
-                                href="https://www.linkedin.com/in/sainsa-rethmi-thennakoon-238a54291/" 
-                                icon={<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>} 
-                            />
+
+                        {/* Status Badge */}
+                        <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-xs font-medium">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                            </span>
+                            <span>Available for new projects &amp; collaborations</span>
+                        </div>
+
+                        {/* Social Links */}
+                        <div className="flex items-center gap-2.5 pt-1">
+                            {socialLinks.map((social) => (
+                                <a
+                                    key={social.name}
+                                    href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-500 dark:text-gray-400 transition-all duration-300 shadow-sm hover:scale-105 ${social.hoverColor}`}
+                                    title={social.name}
+                                    aria-label={social.name}
+                                >
+                                    {social.icon}
+                                </a>
+                            ))}
                         </div>
                     </div>
 
-                    {/* Quick Links */}
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4 text-slate-900 dark:text-white">Quick Links</h4>
-                        <ul className="space-y-2">
-                            {['About', 'Projects', 'Skills', 'Education', 'Awards'].map((item) => (
-                                <li key={item}>
-                                    <a href={`#${item.toLowerCase()}`} className="text-slate-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-white transition-colors duration-300">
-                                        {item}
+                    {/* Quick Navigation Column (3 cols) */}
+                    <div className="lg:col-span-3 space-y-4">
+                        <div className="flex items-center gap-2">
+                            <Sparkles className="w-4 h-4 text-indigo-600 dark:text-cyan-400" />
+                            <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider">
+                                Explore
+                            </h4>
+                        </div>
+                        <ul className="grid grid-cols-2 gap-y-2.5 gap-x-4 text-xs font-medium">
+                            {quickLinks.map((item) => (
+                                <li key={item.label}>
+                                    <a
+                                        href={item.href}
+                                        className="text-slate-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-cyan-400 transition-colors duration-200 flex items-center gap-1.5 group"
+                                    >
+                                        <span className="w-1 h-1 rounded-full bg-slate-300 dark:bg-gray-600 group-hover:bg-indigo-600 dark:group-hover:bg-cyan-400 transition-colors" />
+                                        <span>{item.label}</span>
                                     </a>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    {/* Contact Info */}
-                    <div>
-                        <h4 className="text-lg font-semibold mb-4 text-slate-900 dark:text-white">Get In Touch</h4>
-                        <ul className="space-y-3">
-                            <li className="flex items-center space-x-3 text-slate-600 dark:text-gray-400">
-                                <span className="hover:text-indigo-600 dark:hover:text-white transition-colors cursor-pointer">
-                                    reththennakoon.edu@gmail.com
-                                </span>
-                            </li>
-                            <li className="flex items-center space-x-3 text-slate-600 dark:text-gray-400">
-                                <span>+94 70 483 9927</span>
-                            </li>
-                            <li className="flex items-start space-x-3 text-slate-600 dark:text-gray-400">
-                                <span>Bandarawela, Sri Lanka</span>
-                            </li>
-                        </ul>
+                    {/* Get In Touch & Action Column (4 cols) */}
+                    <div className="lg:col-span-4 space-y-4">
+                        <h4 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider">
+                            Get In Touch
+                        </h4>
+                        
+                        <p className="text-xs text-slate-600 dark:text-gray-400 leading-relaxed">
+                            Have an inspiring project, a design challenge, or just want to connect? Let's build something remarkable together.
+                        </p>
+
+                        <div className="space-y-2.5 text-xs">
+                            <a 
+                                href="mailto:reththennakoon.edu@gmail.com"
+                                className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-indigo-400 dark:hover:border-cyan-400/50 text-slate-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-cyan-300 transition-all shadow-sm group"
+                            >
+                                <Mail className="w-4 h-4 text-indigo-600 dark:text-cyan-400 shrink-0 group-hover:scale-110 transition-transform" />
+                                <span className="truncate font-mono">reththennakoon.edu@gmail.com</span>
+                            </a>
+
+                            <a 
+                                href="tel:+94704839927"
+                                className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-emerald-400 dark:hover:border-emerald-400/50 text-slate-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-300 transition-all shadow-sm group"
+                            >
+                                <Phone className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" />
+                                <span className="font-mono">+94 70 483 9927</span>
+                            </a>
+
+                            <div className="flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-gray-400 shadow-sm">
+                                <MapPin className="w-4 h-4 text-purple-600 dark:text-purple-400 shrink-0" />
+                                <span>Bandarawela &amp; Colombo, Sri Lanka</span>
+                            </div>
+                        </div>
+
+                        {/* Quick Resume Button */}
+                        {/* <button
+                            onClick={handleDownloadCV}
+                            className="w-full mt-2 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-xl shadow-md shadow-indigo-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                        >
+                            <Download className="w-3.5 h-3.5" />
+                            <span>Download Resume (PDF)</span>
+                        </button> */}
                     </div>
+
                 </div>
 
-                {/* Divider */}
-                <div className="border-t border-slate-200 dark:border-gray-800 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-                        <p className="text-slate-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
-                            © {new Date().getFullYear()} Sainsa Rethmi Thennakoon. Crafted with passion.
-                        </p>
-                        <div className="flex space-x-6 text-sm">
-                            <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-white transition-colors">Privacy Policy</a>
-                            <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-white transition-colors">Terms of Service</a>
-                        </div>
+                {/* Bottom Bar */}
+                <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                    <p className="text-xs text-slate-500 dark:text-gray-500">
+                        © {new Date().getFullYear()} <span className="font-semibold text-slate-700 dark:text-gray-300">Sainsa Rethmi Thennakoon</span>. All rights reserved.
+                    </p>
+
+                    <div className="flex items-center gap-4">
+                        <span className="text-xs text-slate-500 dark:text-gray-500 hidden md:inline">
+                            Designed with Figma &bull; Built with React &bull; Styled with Tailwind
+                        </span>
+
+                        {/* Back to Top Button */}
+                        <button
+                            onClick={scrollToTop}
+                            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-indigo-400 dark:hover:border-cyan-400/50 text-slate-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-cyan-300 text-xs font-semibold shadow-sm hover:scale-105 active:scale-95 transition-all"
+                            aria-label="Back to Top"
+                        >
+                            <span>Back to Top</span>
+                            <ArrowUp className="w-3.5 h-3.5" />
+                        </button>
                     </div>
                 </div>
             </div>
         </footer>
     );
 };
-
-// Helper component for Social Links
-const SocialLink = ({ href, icon }: { href: string, icon: React.ReactNode }) => (
-    <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="p-2 bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-gray-400 hover:bg-indigo-600 dark:hover:bg-indigo-600 hover:text-white dark:hover:text-white transition-all duration-300 rounded-lg shadow-sm"
-    >
-        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            {icon}
-        </svg>
-    </a>
-);
 
 export default Footer;

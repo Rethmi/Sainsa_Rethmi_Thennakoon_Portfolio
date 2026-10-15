@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121214" />
+      <stop offset="50%" stop-color="#1a1a1f" />
+      <stop offset="100%" stop-color="#0a0a0c" />
+    </linearGradient>
+    <linearGradient id="archAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+    <filter id="archShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#archBg)" />
+  <circle cx="680" cy="90" r="140" fill="#fbbf24" opacity="0.1" filter="blur(60px)" />
+  <circle cx="120" cy="420" r="120" fill="#cbd5e1" opacity="0.08" filter="blur(60px)" />
+
+  <g transform="translate(40, 35)" filter="url(#archShadow)">
+    <rect width="720" height="430" rx="16" fill="#141416" stroke="#2c2c34" stroke-width="1.5" />
+    <rect width="720" height="44" rx="16" fill="#1b1b1f" />
+    <path d="M 0,44 L 720,44" stroke="#2c2c34" stroke-width="1" />
+    <circle cx="25" cy="22" r="5" fill="#ef4444" />
+    <circle cx="43" cy="22" r="5" fill="#eab308" />
+    <circle cx="61" cy="22" r="5" fill="#22c55e" />
+    <rect x="180" y="10" width="360" height="24" rx="6" fill="#0d0d0f" stroke="#2c2c34" />
+    <text x="360" y="26" fill="#d4d4d8" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">forma-architects.design/monographs</text>
+
+    <!-- App navigation bar -->
+    <g transform="translate(40, 65)">
+      <text x="0" y="20" fill="#ffffff" font-family="'Cinzel', serif, 'Times New Roman'" font-size="18" font-weight="700" letter-spacing="3">FORMA STUDIO</text>
+      <text x="190" y="18" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Spaces</text>
+      <text x="260" y="18" fill="#71717a" font-family="Inter, sans-serif" font-size="11">Philosophy</text>
+      <text x="345" y="18" fill="#71717a" font-family="Inter, sans-serif" font-size="11">Exhibitions</text>
+      <text x="435" y="18" fill="#71717a" font-family="Inter, sans-serif" font-size="11">Publications</text>
+      
+      <!-- Animation badge indicator -->
+      <rect x="520" y="2" width="120" height="24" rx="6" fill="#fbbf24" opacity="0.15" stroke="#fbbf24" stroke-width="1" />
+      <text x="580" y="17" fill="#fbbf24" font-family="Inter, sans-serif" font-size="9" font-weight="700" text-anchor="middle">★ Dynamic Animations</text>
+
+      <!-- Hero spatial layout -->
+      <g transform="translate(0, 50)">
+        <!-- Left: Architectural statement -->
+        <g transform="translate(0, 20)">
+          <text x="0" y="20" fill="#71717a" font-family="Inter, sans-serif" font-size="10" letter-spacing="2">PROJECT 04 · NORDIC CLIFF RESIDENCE</text>
+          <text x="0" y="55" fill="#f4f4f5" font-family="'Cinzel', serif, 'Times New Roman'" font-size="28" font-weight="600">Poetry in</text>
+          <text x="0" y="90" fill="#fbbf24" font-family="'Cinzel', serif, 'Times New Roman'" font-size="28" font-weight="600">Concrete &amp; Light</text>
+          <text x="0" y="125" fill="#a1a1aa" font-family="Inter, sans-serif" font-size="11">Minimalist monolithic structures harmonizing sheer bedrock cliffs with boundless ocean horizons.</text>
+          
+          <rect y="150" width="130" height="32" rx="4" fill="#ffffff" />
+          <text x="65" y="170" fill="#000000" font-family="Inter, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Explore Walkthrough</text>
+
+          <rect x="145" y="150" width="130" height="32" rx="4" fill="transparent" stroke="#52525b" stroke-width="1" />
+          <text x="210" y="170" fill="#d4d4d8" font-family="Inter, sans-serif" font-size="11" font-weight="500" text-anchor="middle">View Blueprints</text>
+        </g>
+
+        <!-- Right: Isometric Architectural Render with Animated Guide lines -->
+        <g transform="translate(350, 10)">
+          <rect width="290" height="250" rx="12" fill="#1c1c22" stroke="#3f3f46" />
+          
+          <!-- Geometric building silhouette -->
+          <polygon points="50,190 145,130 240,190 145,240" fill="#27272a" stroke="#71717a" stroke-width="1" />
+          <polygon points="50,190 50,110 145,50 145,130" fill="#3f3f46" stroke="#a1a1aa" stroke-width="1" />
+          <polygon points="145,130 145,50 240,110 240,190" fill="#18181b" stroke="#71717a" stroke-width="1" />
+          <polygon points="145,50 90,80 185,80 240,110" fill="#fbbf24" opacity="0.3" />
+
+          <!-- Dynamic animation indicator lines -->
+          <path d="M 30,30 L 260,30" stroke="#52525b" stroke-dasharray="3 3" />
+          <path d="M 260,30 L 260,220" stroke="#52525b" stroke-dasharray="3 3" />
+          <circle cx="145" cy="50" r="5" fill="#fbbf24" />
+          <text x="145" y="38" fill="#fbbf24" font-family="Inter, sans-serif" font-size="9" font-weight="700" text-anchor="middle">Smart Animate Apex</text>
+
+          <rect x="20" y="210" width="80" height="22" rx="4" fill="#09090b" opacity="0.8" />
+          <text x="60" y="225" fill="#e4e4e7" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">Scale: 1:100</text>
+          
+          <rect x="190" y="210" width="85" height="22" rx="4" fill="#09090b" opacity="0.8" />
+          <text x="232" y="225" fill="#34d399" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">60 FPS Motion</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="50%" stop-color="#292524" />
+      <stop offset="100%" stop-color="#0c0a09" />
+    </linearGradient>
+    <linearGradient id="amberGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="bnDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#bnBg)" />
+  <circle cx="200" cy="100" r="140" fill="#d97706" opacity="0.1" filter="blur(50px)" />
+  <circle cx="680" cy="400" r="140" fill="#fbbf24" opacity="0.08" filter="blur(50px)" />
+
+  <g transform="translate(40, 35)" filter="url(#bnDrop)">
+    <rect width="720" height="430" rx="16" fill="#1c1917" stroke="#44403c" stroke-width="1.5" />
+    <rect width="720" height="44" rx="16" fill="#292524" />
+    <path d="M 0,44 L 720,44" stroke="#44403c" stroke-width="1" />
+    
+    <circle cx="25" cy="22" r="5.5" fill="#ef4444" />
+    <circle cx="45" cy="22" r="5.5" fill="#eab308" />
+    <circle cx="65" cy="22" r="5.5" fill="#22c55e" />
+
+    <rect x="180" y="10" width="360" height="24" rx="6" fill="#1c1917" stroke="#44403c" />
+    <text x="360" y="26" fill="#d6d3d1" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">booknook.pos/terminal-01/catalog</text>
+
+    <!-- Header -->
+    <rect x="25" y="65" width="28" height="28" rx="8" fill="url(#amberGold)" />
+    <text x="64" y="84" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="bold">The Book Nook</text>
+    <text x="195" y="84" fill="#fbbf24" font-family="Inter, sans-serif" font-size="11" font-weight="600">POS &amp; INVENTORY</text>
+    
+    <!-- Search Bar -->
+    <rect x="340" y="66" width="180" height="28" rx="14" fill="#292524" stroke="#44403c" />
+    <text x="360" y="84" fill="#a8a29e" font-family="Inter, sans-serif" font-size="11">Search ISBN / Title...</text>
+
+    <!-- Catalog Grid (Left 460px) -->
+    <g transform="translate(25, 110)">
+      <!-- Book 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="140" height="185" rx="10" fill="#292524" stroke="#44403c" />
+        <rect width="140" height="95" rx="10" fill="#78350f" />
+        <text x="70" y="55" fill="#fde68a" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">CLEAN CODE</text>
+        <text x="12" y="120" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">Clean Code</text>
+        <text x="12" y="136" fill="#a8a29e" font-family="Inter, sans-serif" font-size="10">Robert C. Martin</text>
+        <text x="12" y="165" fill="#fbbf24" font-family="Inter, sans-serif" font-size="14" font-weight="bold">$38.50</text>
+        <rect x="98" y="150" width="30" height="24" rx="6" fill="#d97706" />
+        <text x="113" y="166" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+      </g>
+
+      <!-- Book 2 -->
+      <g transform="translate(155, 0)">
+        <rect width="140" height="185" rx="10" fill="#292524" stroke="#44403c" />
+        <rect width="140" height="95" rx="10" fill="#1e3a8a" />
+        <text x="70" y="55" fill="#bfdbfe" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">DESIGN PATTERNS</text>
+        <text x="12" y="120" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">GoF Patterns</text>
+        <text x="12" y="136" fill="#a8a29e" font-family="Inter, sans-serif" font-size="10">Erich Gamma et al.</text>
+        <text x="12" y="165" fill="#fbbf24" font-family="Inter, sans-serif" font-size="14" font-weight="bold">$45.00</text>
+        <rect x="98" y="150" width="30" height="24" rx="6" fill="#d97706" />
+        <text x="113" y="166" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+      </g>
+
+      <!-- Book 3 -->
+      <g transform="translate(310, 0)">
+        <rect width="140" height="185" rx="10" fill="#292524" stroke="#44403c" />
+        <rect width="140" height="95" rx="10" fill="#14532d" />
+        <text x="70" y="55" fill="#bbf7d0" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">THE LEAN STARTUP</text>
+        <text x="12" y="120" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">The Lean Startup</text>
+        <text x="12" y="136" fill="#a8a29e" font-family="Inter, sans-serif" font-size="10">Eric Ries</text>
+        <text x="12" y="165" fill="#fbbf24" font-family="Inter, sans-serif" font-size="14" font-weight="bold">$29.90</text>
+        <rect x="98" y="150" width="30" height="24" rx="6" fill="#d97706" />
+        <text x="113" y="166" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">+</text>
+      </g>
+
+      <!-- Bottom Status -->
+      <rect x="0" y="200" width="450" height="75" rx="12" fill="#292524" stroke="#44403c" />
+      <text x="20" y="228" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="bold">Real-time Stock Monitor</text>
+      <text x="20" y="248" fill="#a8a29e" font-family="Inter, sans-serif" font-size="11">Active SKUs: 1,280 • Low Stock Alert: 4 Titles • Auto-Sync: Enabled</text>
+    </g>
+
+    <!-- Cart Drawer (Right 220px) -->
+    <g transform="translate(490, 65)">
+      <rect width="205" height="340" rx="14" fill="#292524" stroke="#44403c" />
+      <text x="18" y="32" fill="#ffffff" font-family="Inter, sans-serif" font-size="14" font-weight="bold">Current Order</text>
+      <rect x="135" y="18" width="54" height="20" rx="10" fill="#d97706" opacity="0.2" />
+      <text x="162" y="32" fill="#fbbf24" font-family="Inter, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">3 Items</text>
+
+      <line x1="18" y1="48" x2="187" y2="48" stroke="#44403c" />
+
+      <!-- Cart Item 1 -->
+      <text x="18" y="70" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">Clean Code</text>
+      <text x="18" y="85" fill="#a8a29e" font-family="Inter, sans-serif" font-size="10">1x @ $38.50</text>
+      <text x="185" y="78" fill="#fbbf24" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="end">$38.50</text>
+
+      <!-- Cart Item 2 -->
+      <text x="18" y="112" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">GoF Patterns</text>
+      <text x="18" y="127" fill="#a8a29e" font-family="Inter, sans-serif" font-size="10">1x @ $45.00</text>
+      <text x="185" y="120" fill="#fbbf24" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="end">$45.00</text>
+
+      <!-- Cart Item 3 -->
+      <text x="18" y="154" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" font-weight="600">The Lean Startup</text>
+      <text x="18" y="169" fill="#a8a29e" font-family="Inter, sans-serif" font-size="10">1x @ $29.90</text>
+      <text x="185" y="162" fill="#fbbf24" font-family="Inter, sans-serif" font-size="11" font-weight="bold" text-anchor="end">$29.90</text>
+
+      <line x1="18" y1="190" x2="187" y2="190" stroke="#44403c" />
+
+      <!-- Summary -->
+      <text x="18" y="215" fill="#a8a29e" font-family="Inter, sans-serif" font-size="11">Subtotal</text>
+      <text x="185" y="215" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" text-anchor="end">$113.40</text>
+
+      <text x="18" y="235" fill="#a8a29e" font-family="Inter, sans-serif" font-size="11">Tax (8%)</text>
+      <text x="185" y="235" fill="#ffffff" font-family="Inter, sans-serif" font-size="11" text-anchor="end">$9.07</text>
+
+      <text x="18" y="262" fill="#ffffff" font-family="Inter, sans-serif" font-size="13" font-weight="bold">Total Due</text>
+      <text x="185" y="262" fill="#fbbf24" font-family="Inter, sans-serif" font-size="14" font-weight="bold" text-anchor="end">$122.47</text>
+
+      <!-- Pay Button -->
+      <rect x="18" y="285" width="169" height="38" rx="10" fill="url(#amberGold)" />
+      <text x="102" y="309" fill="#1c1917" font-family="Inter, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Charge $122.47</text>
+    </g>
+  </g>
+</svg>

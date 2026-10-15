@@ -3,11 +3,18 @@ import { Calendar, GraduationCap, MapPin } from 'lucide-react';
 const Education = () => {
     const education = [
         {
+            degree: "BSc (Hons) Top-Up Degree in Computing",
+            institution: "London Tech City Campus (in partnership with Wrexham University)",
+            period: "2026 - Present",
+            status: "Current",
+            description: "Reading for Top-Up Degree in partnership with Wrexham University, focusing on advanced computing systems, software architecture, and user experience engineering."
+        },
+        {
             degree: "Graduate Diploma in Software Engineering (GDSE)",
             institution: "Institute of Software Engineering (IJSE)",
             period: "2024 - 2026",
-            status: "Current",
-            description: "Focusing on Full-stack development, UI,UX Designing, and Enterprise solutions."
+            status: "Completed",
+            description: "Focusing on Full-stack development, UI/UX Designing, and Enterprise solutions."
         },
         {
             degree: "Diploma in Information & Communication Technology",

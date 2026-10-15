@@ -1,6 +1,6 @@
 import React from 'react';
-import { MapPin, Phone, Download, GraduationCap, Code2, Sparkles, Bug } from 'lucide-react';
-import { FiCode, FiBriefcase, FiAward, FiDownload } from 'react-icons/fi';
+import { MapPin, Phone, GraduationCap, Code2, Sparkles, Bug } from 'lucide-react';
+import { FiDownload } from 'react-icons/fi';
 
 const About = () => {
     // const handleDownloadCV = () => {

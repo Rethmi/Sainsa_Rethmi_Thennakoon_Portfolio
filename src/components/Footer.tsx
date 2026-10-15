@@ -6,7 +6,6 @@ import {
     Phone, 
     MapPin, 
     ArrowUp, 
-    Download, 
     Github, 
     Linkedin, 
     Sparkles 
@@ -20,12 +19,7 @@ const Footer: React.FC = () => {
         });
     };
 
-    const handleDownloadCV = () => {
-        const link = document.createElement('a');
-        link.href = '/cv/Sainsa_Rethmi_Thennakoon_CV.pdf';
-        link.download = 'Sainsa_Rethmi_Thennakoon_CV.pdf';
-        link.click();
-    };
+     
 
     const quickLinks = [
         { label: 'Home', href: '#home' },
